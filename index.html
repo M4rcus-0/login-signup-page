@@ -3,29 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title>
+    <title>Página de Conexão|Inscrição</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="pagina">
+        <div class="tema-escuro-claro">
+            <input type="checkbox" name="" id="">
+            <span class="botao"></span>
+        </div>
         <div class="box">
             <div class="login">
-                <h2 class="titulo">Login</h2>
-                <div class="form">
-                    <input type="text" name="" id="">
-                    <input type="password" name="" id="">
-                    <input type="button" value="">
-                </div>
-            </div>
-            <div class="cadastro hide">
-                <h2 class="titulo">Cadastro</h2>
+                <h2 class="titulo">Conexão</h2>
                 <div class="form">
                     <form action="">
-                        <input type="text" name="" id="">
-                        <input type="password" name="" id="">
-                        <input type="email" name="" id="">
-                        <input type="checkbox" name="" id="">
-                        <input type="button" value="">
+                        <div class="box-input">
+                            <input class="input" type="text" name="login-name" id="login-name" required>
+                            <label class="label" for="login-name">Usuário</label>
+                            <span class="icone"></span>
+                        </div>
+                        <div class="box-input">
+                            <input class="input" type="password" name="login-senha" id="login-senha" required>
+                            <label class="label" for="login-senha">Senha</label>
+                            <span class="icone"></span>
+                        </div>
+                        <div class="box-input">
+                            <div>
+                                <input type="checkbox" name="login-checkbox" id="login-checkbox">
+                                <label for="login-checkbox">Lembre-se de mim</label>
+                            </div>
+                            <a href="">Esqueceu sua senha?</a>
+                        </div>
+                        <div class="box-input">
+                            <input class="input" type="button" value="Conectar-se">
+                        </div>
+                        <div class="box-input">
+                            <p>Não possui conta?<a href="">Inscreva-se!</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="signup hide">
+                <h2 class="titulo">Inscrição</h2>
+                <div class="form">
+                    <form action="">
+                        <label for="signup-name">Usuário</label>
+                        <input type="text" name="signup-name" id="signup-name" required>
+                        <label for="signup-email">E-mail</label>
+                        <input type="email" name="signup-email" id="signup-email" required>
+                        <label for="signup-password">Senha</label>
+                        <input type="password" name="signup-password" id="signup-password" required>
+                        <label for="signup-checkbox">Concordo com o termos e serviço</label>
+                        <input type="checkbox" name="signup-checkbox" id="signup-checkbox" required>
+                        <input type="button" value="Inscrever-se">
+                        <p>Já possui uma conta?<a href="">Conecte-se!</a></p>
                     </form>
                 </div>
             </div>
